@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract DegenToken is ERC20, Ownable {
     mapping(uint256 => uint256) public itemPrices; // Mapping of item IDs to their prices
 
-    constructor() ERC20("DegenToken", "DTK") {
+    constructor() ERC20("DegenToken", "DGN") {
         // Mint an initial supply of tokens to the contract deployer (owner)
         _mint(msg.sender, 1000000 * 10 ** uint(decimals())); // Adjust the initial supply as needed
     }
